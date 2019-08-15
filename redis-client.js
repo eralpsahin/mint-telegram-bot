@@ -1,4 +1,4 @@
-const debug = require('debug')('boilerplate');
+const debug = require('debug')('mtb:redis');
 const redis = require('redis');
 
 /**

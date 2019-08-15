@@ -4,11 +4,11 @@
  * Module dependencies.
  */
 
-const debug = require('debug')('boilerplate');
+const debug = require('debug')('mtb:server');
 const http = require('http');
 const app = require('../app');
 
-const port = '3000';
+const port = '3001';
 app.set('port', port);
 
 /**
