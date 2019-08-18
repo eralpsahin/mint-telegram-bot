@@ -16,6 +16,8 @@
   "rules": {
     "semi": ["error", "always"],
     "quotes": ["error", "single"],
-    "max-len": [2, 80, 8]
+    "max-len": [2, 80, 8],
+    "no-multi-str": "off",
+    "operator-linebreak": "off"
   }
 }
