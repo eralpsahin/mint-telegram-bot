@@ -27,3 +27,6 @@ node_modules/
 
 # VSCode specific settings
 .vscode
+
+# macOS garbage
+.DS_Store
