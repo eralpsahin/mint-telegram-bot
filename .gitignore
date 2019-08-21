@@ -30,3 +30,7 @@ node_modules/
 
 # macOS garbage
 .DS_Store
+
+# Self Signed SSL certificate
+server.key
+server.pem
