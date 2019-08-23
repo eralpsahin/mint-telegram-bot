@@ -18,6 +18,7 @@
     "quotes": ["error", "single"],
     "max-len": [2, 80, 8],
     "no-multi-str": "off",
-    "operator-linebreak": "off"
+    "operator-linebreak": "off",
+    "arrow-parens": ["error", "always"]
   }
 }
