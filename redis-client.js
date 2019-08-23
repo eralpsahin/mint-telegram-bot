@@ -1,11 +1,18 @@
 const debug = require('debug')('mtb:redis');
 const redis = require('redis');
+const { promisify } = require('util');
 
 /**
  * Create Redis Instance.
  */
 
 const redisClient = redis.createClient();
+
+/**
+ * Promisify get function of Redis.
+ */
+
+redisClient.getAsync = promisify(redisClient.get).bind(redisClient);
 
 /**
  * Event listener for Redis "error" event.
