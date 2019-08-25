@@ -22,6 +22,10 @@ describe('login', () => {
       refreshToken: process.env.TEST_TOKEN,
     });
   });
+  test('Login attemp fails', async () => {
+    const response = await login('8888888888', null);
+    expect(response).toEqual(null);
+  });
 });
 
 describe('getData', () => {
@@ -32,6 +36,10 @@ describe('getData', () => {
     expect(Object.keys(response)).toEqual(
       expect.arrayContaining(['remaining4G', 'usage4G']),
     );
+  });
+  test('Retrieve attempt fails', async () => {
+    const response = await getData('888888', null);
+    expect(response).toEqual(null);
   });
 });
 
@@ -44,5 +52,9 @@ describe('refreshBearer', () => {
       acc.refreshToken,
     )).data;
     expect(Object.keys(response)).toEqual(expect.arrayContaining(['token']));
+  });
+  test('Refresh account bearer attempt fails', async () => {
+    const response = await refreshBearer('8888888888', null);
+    expect(response).toEqual(null);
   });
 });
