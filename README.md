@@ -1,3 +1,7 @@
+<details>
+  <summary>This is deprecated/broken because Mint update their API. If you still want to read the old README</summary>
+
+    
 # mint-telegram-bot [![Build Status](https://travis-ci.org/eralpsahin/mint-telegram-bot.svg?branch=master)](https://travis-ci.org/eralpsahin/mint-telegram-bot)
 
 > Telegram bot that gets your Mint Mobile stats faster than the official Mint Mobile App.
@@ -25,3 +29,5 @@ Start using it here: [@MintMobileBot](https://t.me/MintMobileBot)
     ```
     - Response should be: `{"ok":true,"result":true,"description":"Webhook was set"}`.
     - Check if everything went well: `https://api.telegram.org/bot<api-token>/getWebhookinfo` You should see `has_custom_certificate":true`.
+</details>
+
